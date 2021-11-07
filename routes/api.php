@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\InventoryControllerAPI;
+use Illuminate\Validation\Rules\In;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('inventory',[InventoryControllerAPI::class,'index']);
+Route::post('login',[InventoryControllerAPI::class,'login']);
