@@ -4,14 +4,14 @@
 namespace App\Http\Controllers\API;
 
 
-use App\Http\Controllers\Controller;
-use App\Models\Inventory;
 use App\Models\Logs;
 use App\Models\User;
+use App\Models\Inventory;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
 
 class InventoryControllerAPI extends Controller
 {
